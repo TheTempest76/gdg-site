@@ -10,8 +10,7 @@ export default function Home() {
 
   return (
     
-    <div >
-        
+    <div className="pt-14">
 
     </div>
   );
