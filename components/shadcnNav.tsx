@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation"
 import HamburgerMenu from "./hamburger-menu"
 import { cn } from "@/lib/utils"
 import { Icons } from "./icons"
-import NavDropdown from "./nav-dropdown"
 export function MainNav() {
   const pathname = usePathname()
 

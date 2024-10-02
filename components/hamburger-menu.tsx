@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Icons } from "@/components/icons"
@@ -32,10 +32,7 @@ export default function HamburgerMenu() {
           <Icons.logo className="h-6 w-6" />
           <span className="font-bold">GDG</span>
         </Link></h2>
-            <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-              
-              <span className="sr-only">Close menu</span>
-            </Button>
+          
           </div>
           {navItems.map((item) => (
             <Link
