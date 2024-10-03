@@ -1,9 +1,6 @@
 'use client'
 import Image from "next/image";
-
-import { BookOpen, GraduationCap, Globe } from "lucide-react";
-
-import { SiteHeader } from "@/components/site-header";
+import BodyCarousel from "@/components/body-carousel";
 export default function Home() {
   
 
@@ -11,7 +8,10 @@ export default function Home() {
   return (
     
     <div className="pt-14">
-
+      <div className="about">
+        <BodyCarousel/>
+      </div>
+      
     </div>
   );
 }
