@@ -11,10 +11,10 @@ export function MainNav() {
   return (
     <>
        <div className="relative flex md:hidden w-full items-center">
-        {/* "hi" on the left */}
+   
         <span className="absolute left-0 pl-4 "><HamburgerMenu/></span>
 
-        {/* Logo centered */}
+
         <div className="flex justify-center w-full">
           <Link href="/" className="flex items-center space-x-2">
             <Icons.logo className="h-6 w-6" />
@@ -24,7 +24,7 @@ export function MainNav() {
       </div>
       
 
-      {/* Navigation and logo for medium and larger devices */}
+
       <div className="mr-4 hidden md:flex ">
         <Link href="/" className="mr-4 flex items-center space-x-2 lg:mr-6">
           <Icons.logo className="h-6 w-6" />

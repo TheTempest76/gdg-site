@@ -4,17 +4,15 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-  } from "@/components/ui/carousel"
+} from "@/components/ui/carousel"
 import { Card, CardContent } from "./ui/card";
 import React from "react";
 import Autoplay from "embla-carousel-autoplay"
 const images = [
-    '/images/old_building1.jpg',
-    '/images/old_building2.jpg',
-    '/images/old_building3.jpg',
-    '/images/old_building4.jpg',
-    '/images/old_building5.jpg',
-    '/images/old_building6.jpg'
+    '/carousel1.jpeg',
+    '/carousel2.jpeg',
+    '/carousel3.jpeg',
+    '/carousel4.jpeg',
 ];
 
 export default function BodyCarousel() {
@@ -34,7 +32,7 @@ export default function BodyCarousel() {
                         <CarouselItem key={index}>
                             <Card>
                                 <CardContent>
-                                    <img src={image} alt="carousel" width={1600} height={500} />
+                                    <img src={image} alt="carousel" style={{ width: '1600px', height: '600px' }} />
                                 </CardContent>
                             </Card>
                         </CarouselItem>
