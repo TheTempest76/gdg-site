@@ -7,11 +7,10 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Icons } from "@/components/icons"
 const navItems = [
-  { href: "/about", label: "About" },
-  { href: "/core-team", label: "Core Team" },
-  { href: "/News", label: "News" },
-  { href: "/Projects", label: "Projects" },
-  { href: "/join-us", label: "Join Us" },
+  { href: "#about", label: "About" },
+  { href: "#team", label: "Core Team" },
+  { href: "#Gallery", label: "Gallery" },
+  { href: "#contact", label: "Contact Us" },
 ]
 
 export default function HamburgerMenu() {

@@ -10,11 +10,8 @@ export function MainNav() {
 
   return (
     <>
-       <div className="relative flex md:hidden w-full items-center">
-   
+      <div className="relative flex md:hidden w-full items-center">
         <span className="absolute left-0 pl-4 "><HamburgerMenu/></span>
-
-
         <div className="flex justify-center w-full">
           <Link href="/" className="flex items-center space-x-2">
             <Icons.logo className="h-6 w-6" />
@@ -22,8 +19,6 @@ export function MainNav() {
           </Link>
         </div>
       </div>
-      
-
 
       <div className="mr-4 hidden md:flex ">
         <Link href="/" className="mr-4 flex items-center space-x-2 lg:mr-6">
@@ -33,19 +28,19 @@ export function MainNav() {
 
         <nav className="flex items-center gap-4 text-sm lg:gap-6">
           <Link
-            href="/about"
+            href="#about"
             className={cn(
               "transition-colors hover:text-foreground/80",
-              pathname === "/about" ? "text-foreground" : "text-foreground/60"
+              pathname === "#about" ? "text-foreground" : "text-foreground/60"
             )}
           >
             About
           </Link>
           <Link
-            href="/core-team"
+            href="#team"
             className={cn(
               "transition-colors hover:text-foreground/80",
-              pathname?.startsWith("/core-team")
+              pathname?.startsWith("#team")
                 ? "text-foreground"
                 : "text-foreground/60"
             )}
@@ -53,38 +48,26 @@ export function MainNav() {
             Core Team
           </Link>
           <Link
-            href="/News"
+            href="#gallery"
             className={cn(
               "transition-colors hover:text-foreground/80",
-              pathname?.startsWith("/News")
+              pathname?.startsWith("#gallery")
                 ? "text-foreground"
                 : "text-foreground/60"
             )}
           >
-            News
+            Gallery
           </Link>
           <Link
-            href="/Projects"
+            href="#contact"
             className={cn(
               "transition-colors hover:text-foreground/80",
-              pathname?.startsWith("/Projects")
+              pathname?.startsWith("#contact")
                 ? "text-foreground"
                 : "text-foreground/60"
             )}
           >
-            Projects
-          </Link>
-          <Link
-            href="/join-us"
-            className={cn(
-              "transition-colors hover:text-foreground/80",
-              pathname?.startsWith("/docs/component/chart") ||
-                pathname?.startsWith("/join-us")
-                ? "text-foreground"
-                : "text-foreground/60"
-            )}
-          >
-            Join Us
+            Contact Us
           </Link>
         </nav>
       </div>
